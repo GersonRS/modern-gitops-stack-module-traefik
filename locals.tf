@@ -35,15 +35,9 @@ locals {
           }
         }
       } : null
-      ressources = { # TODO: use var.resources instead and fix the typo in "reSSources"
-        limits = {
-          cpu    = "250m"
-          memory = "512Mi"
-        }
-        requests = {
-          cpu    = "125m"
-          memory = "256Mi"
-        }
+      resources = {
+        requests = { for k, v in var.resources.requests : k => v if v != null }
+        limits   = { for k, v in var.resources.limits : k => v if v != null }
       }
     }
   }]

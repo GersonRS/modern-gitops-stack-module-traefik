@@ -23,7 +23,7 @@ variable "destination_cluster" {
 variable "target_revision" {
   description = "Override of target revision of the application chart."
   type        = string
-  default     = "main" # x-release-please-version
+  default     = "v6.3.0" # x-release-please-version
 }
 
 variable "enable_service_monitor" {
@@ -66,6 +66,25 @@ variable "replicas" {
   description = "Number of Traefik pods to be deployed."
   type        = number
   default     = 2
+}
+
+variable "resources" {
+  description = <<-EOT
+    Resource limits and requests for Traefik's pods. Follow the style on https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/[official documentation] to understand the format of the values.
+
+    IMPORTANT: These are not production values. You should always adjust them to your needs.
+  EOT
+  type = object({
+    requests = optional(object({
+      cpu    = optional(string, "150m")
+      memory = optional(string, "128Mi")
+    }), {})
+    limits = optional(object({
+      cpu    = optional(string)
+      memory = optional(string, "256Mi")
+    }), {})
+  })
+  default = {}
 }
 
 variable "enable_https_redirection" {

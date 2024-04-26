@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/GersonRS/modern-gitops-stack-module-traefik/compare/v1.1.0...v1.2.0) (2024-04-26)
+
+
+### Features
+
+* remove others clusters ([bcefe6d](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/bcefe6dbe1ea2b017ceb3f24c9a17cc254613020))
+
 ## [1.1.0](https://github.com/GersonRS/modern-gitops-stack-module-traefik/compare/v1.0.0...v1.1.0) (2024-04-26)
 
 

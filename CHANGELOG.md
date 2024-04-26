@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/GersonRS/modern-gitops-stack-module-traefik/compare/v1.0.0...v1.1.0) (2024-04-26)
+
+
+### Features
+
+* finish documentation and adjust ref links ([d0b7c1a](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/d0b7c1a29e53eb0c86ad62fb6bf643c5ddf8616d))
+
 ## 1.0.0 (2024-04-24)
 
 

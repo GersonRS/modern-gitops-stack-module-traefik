@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.5.0](https://github.com/GersonRS/modern-gitops-stack-module-traefik/compare/v2.4.0...v2.5.0) (2024-05-01)
+
+
+### 🚀 New Features
+
+* change chart update to include secrets ([3a7c7f7](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/3a7c7f77262b277c4b82d9db414515e5eee0d205))
+
+
+### 📚 Documentation
+
+* **terraform-docs:** generate docs and write to README.adoc ([5eca166](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/5eca166dd7c2a29c30e0e8cf47495e876d9051da))
+
 ## [2.4.0](https://github.com/GersonRS/modern-gitops-stack-module-traefik/compare/v2.3.0...v2.4.0) (2024-05-01)
 
 

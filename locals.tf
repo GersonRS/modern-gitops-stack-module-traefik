@@ -3,16 +3,18 @@ locals {
     traefik = {
       deployment = {
         replicas = var.replicas
+        podLabels = {
+          app = "traefik"
+        }
       }
       metrics = {
         prometheus = {
           service = {
             enabled = true
           }
-          serviceMonitor = var.enable_service_monitor ? {
-            # Dummy attribute to make serviceMonitor evaluate to true in a condition in the Helm chart
-            foo = "bar"
-          } : {}
+          serviceMonitor = {
+            enabled = var.enable_service_monitor
+          }
         }
       }
       additionalArguments = [

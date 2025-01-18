@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.6.0](https://github.com/GersonRS/modern-gitops-stack-module-traefik/compare/v2.5.0...v2.6.0) (2025-01-18)
+
+
+### 🚀 New Features
+
+* update project ([37914b9](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/37914b93577ca8e646d16b163859f1bd519c4eff))
+
 ## [2.5.0](https://github.com/GersonRS/modern-gitops-stack-module-traefik/compare/v2.4.0...v2.5.0) (2024-05-01)
 
 

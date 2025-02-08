@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.6.1](https://github.com/GersonRS/modern-gitops-stack-module-traefik/compare/v2.6.0...v2.6.1) (2025-02-08)
+
+
+### ⌨️ Code Refactoring
+
+* adjust workflows ([4fde9e7](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/4fde9e7a74af63f92e8651cd31fe973b95d90580))
+
 ## [2.6.0](https://github.com/GersonRS/modern-gitops-stack-module-traefik/compare/v2.5.0...v2.6.0) (2025-01-18)
 
 

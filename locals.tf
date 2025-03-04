@@ -1,6 +1,11 @@
 locals {
   helm_values = [{
     traefik = {
+      ingressRoute = {
+        dashboard = {
+          enabled = true
+        }
+      }
       deployment = {
         replicas = var.replicas
         podLabels = {

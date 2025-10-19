@@ -80,7 +80,7 @@ variable "resources" {
       memory = optional(string, "128Mi")
     }), {})
     limits = optional(object({
-      cpu    = optional(string)
+      cpu    = optional(string, "300m")
       memory = optional(string, "256Mi")
     }), {})
   })

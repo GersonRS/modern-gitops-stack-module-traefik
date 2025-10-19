@@ -15,7 +15,7 @@ locals {
       metrics = {
         prometheus = {
           service = {
-            enabled = true
+            enabled = var.enable_service_monitor
           }
           serviceMonitor = {
             enabled = var.enable_service_monitor

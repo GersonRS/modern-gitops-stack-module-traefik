@@ -65,7 +65,7 @@ variable "dependency_ids" {
 variable "replicas" {
   description = "Number of Traefik pods to be deployed."
   type        = number
-  default     = 2
+  default     = 1
 }
 
 variable "resources" {

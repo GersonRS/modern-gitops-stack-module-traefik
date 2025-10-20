@@ -65,7 +65,7 @@ Description: Override of target revision of the application chart.
 
 Type: `string`
 
-Default: `"v2.6.1"`
+Default: `"v2.7.0"`
 
 ==== [[input_enable_service_monitor]] <<input_enable_service_monitor,enable_service_monitor>>
 
@@ -121,7 +121,7 @@ Description: Number of Traefik pods to be deployed.
 
 Type: `number`
 
-Default: `2`
+Default: `1`
 
 ==== [[input_resources]] <<input_resources,resources>>
 
@@ -138,7 +138,7 @@ object({
       memory = optional(string, "128Mi")
     }), {})
     limits = optional(object({
-      cpu    = optional(string)
+      cpu    = optional(string, "300m")
       memory = optional(string, "256Mi")
     }), {})
   })
@@ -178,9 +178,9 @@ Description: ID to pass other modules in order to refer to this module as a depe
 [cols="a,a",options="header,autowidth"]
 |===
 |Name |Version
-|[[provider_null]] <<provider_null,null>> |>= 3
 |[[provider_argocd]] <<provider_argocd,argocd>> |>= 6
 |[[provider_utils]] <<provider_utils,utils>> |>= 1
+|[[provider_null]] <<provider_null,null>> |>= 3
 |===
 
 = Resources
@@ -221,7 +221,7 @@ Description: ID to pass other modules in order to refer to this module as a depe
 |[[input_target_revision]] <<input_target_revision,target_revision>>
 |Override of target revision of the application chart.
 |`string`
-|`"v2.6.1"`
+|`"v2.7.0"`
 |no
 
 |[[input_enable_service_monitor]] <<input_enable_service_monitor,enable_service_monitor>>
@@ -271,7 +271,7 @@ object({
 |[[input_replicas]] <<input_replicas,replicas>>
 |Number of Traefik pods to be deployed.
 |`number`
-|`2`
+|`1`
 |no
 
 |[[input_resources]] <<input_resources,resources>>
@@ -289,7 +289,7 @@ object({
       memory = optional(string, "128Mi")
     }), {})
     limits = optional(object({
-      cpu    = optional(string)
+      cpu    = optional(string, "300m")
       memory = optional(string, "256Mi")
     }), {})
   })

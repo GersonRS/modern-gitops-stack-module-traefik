@@ -7,7 +7,6 @@ locals {
         }
       }
       deployment = {
-        kind     = "DaemonSet"
         replicas = var.replicas
         podLabels = {
           app = "traefik"

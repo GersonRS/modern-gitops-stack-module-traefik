@@ -2,7 +2,7 @@ apiVersion: v2
 dependencies:
 - name: traefik
   repository: https://helm.traefik.io/traefik
-  version: 37.1.2
+  version: 30.1.0
 description: |
   This chart installs Traefik and configures it as the default Kubernetes cluster Ingress Controller.
 name: traefik

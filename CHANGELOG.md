@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.8.0](https://github.com/GersonRS/modern-gitops-stack-module-traefik/compare/v2.7.0...v2.8.0) (2026-01-25)
+
+
+### 🚀 New Features
+
+* adjust and updates ([3bbb866](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/3bbb866ba0ff7f2fb324df12699bf884b4cf09b9))
+* conflict resolved ([2fd93ee](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/2fd93ee85a0e5ce9d77443f937fda23637c9c0c9))
+* update chart and other things ([dd3f629](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/dd3f629ec5c22b8acf22ef208c4aacf21b829501))
+
 ## [2.7.0](https://github.com/GersonRS/modern-gitops-stack-module-traefik/compare/v2.6.1...v2.7.0) (2025-10-20)
 
 

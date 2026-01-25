@@ -7,7 +7,7 @@ resource "argocd_project" "this" {
 
   metadata {
     name      = var.destination_cluster != "in-cluster" ? "traefik-${var.destination_cluster}" : "traefik"
-    namespace = "argocd"
+    namespace = var.argocd_namespace
   }
 
   spec {
@@ -16,7 +16,7 @@ resource "argocd_project" "this" {
 
     destination {
       name      = var.destination_cluster
-      namespace = "traefik"
+      namespace = var.namespace
     }
 
     orphaned_resources {
@@ -37,7 +37,7 @@ data "utils_deep_merge_yaml" "values" {
 resource "argocd_application" "this" {
   metadata {
     name      = var.destination_cluster != "in-cluster" ? "traefik-${var.destination_cluster}" : "traefik"
-    namespace = "argocd"
+    namespace = var.argocd_namespace
     labels = merge({
       "application" = "traefik"
       "cluster"     = var.destination_cluster
@@ -61,7 +61,7 @@ resource "argocd_application" "this" {
 
     destination {
       name      = var.destination_cluster
-      namespace = "traefik"
+      namespace = var.namespace
     }
 
     sync_policy {

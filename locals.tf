@@ -18,7 +18,10 @@ locals {
             enabled = var.enable_service_monitor
           }
           serviceMonitor = {
-            enabled = var.enable_service_monitor
+            enabled       = var.enable_service_monitor
+            namespace     = var.namespace
+            interval      = "30s"
+            scrapeTimeout = "10s"
           }
         }
       }
@@ -35,10 +38,23 @@ locals {
           minVersion = "VersionTLS12"
         }
       }
+      providers = {
+        kubernetesIngress = {
+          publishedService = {
+            enabled = true
+          }
+        }
+      }
       ports = var.enable_https_redirection ? {
         web = {
-          redirectTo = {
-            port = "websecure"
+          http = {
+            redirections = {
+              entryPoint = {
+                to        = "websecure"
+                scheme    = "https"
+                permanent = true
+              }
+            }
           }
         }
       } : null

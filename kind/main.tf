@@ -19,7 +19,7 @@ module "traefik" {
 
 data "kubernetes_service_v1" "traefik" {
   metadata {
-    name      = replace(format("%s%s", local.helm_values.0.traefik.fullnameOverride, module.traefik.id), module.traefik.id, "")
+    name      = replace(format("%s%s", local.helm_values.0.traefik.nameOverride, module.traefik.id), module.traefik.id, "")
     namespace = "traefik"
   }
 }

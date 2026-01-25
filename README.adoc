@@ -35,6 +35,30 @@ The following resources are used by this module:
 
 The following input variables are optional (have default values):
 
+==== [[input_project_source_repo]] <<input_project_source_repo,project_source_repo>>
+
+Description: Repository allowed to be scraped in this AppProject.
+
+Type: `string`
+
+Default: `"https://github.com/GersonRS/modern-gitops-stack-module-traefik.git"`
+
+==== [[input_namespace]] <<input_namespace,namespace>>
+
+Description: Namespace where the applications's Kubernetes resources should be created. Namespace will be created in case it doesn't exist.
+
+Type: `string`
+
+Default: `"management"`
+
+==== [[input_argocd_namespace]] <<input_argocd_namespace,argocd_namespace>>
+
+Description: Namespace used by Argo CD where the Application and AppProject resources should be created.
+
+Type: `string`
+
+Default: `"argocd"`
+
 ==== [[input_argocd_project]] <<input_argocd_project,argocd_project>>
 
 Description: Name of the Argo CD AppProject where the Application should be created. If not set, the Application will be created in a new AppProject only for this Application.
@@ -65,7 +89,7 @@ Description: Override of target revision of the application chart.
 
 Type: `string`
 
-Default: `"v2.7.0"`
+Default: `"v2.8.0"`
 
 ==== [[input_enable_service_monitor]] <<input_enable_service_monitor,enable_service_monitor>>
 
@@ -178,9 +202,9 @@ Description: ID to pass other modules in order to refer to this module as a depe
 [cols="a,a",options="header,autowidth"]
 |===
 |Name |Version
+|[[provider_null]] <<provider_null,null>> |>= 3
 |[[provider_argocd]] <<provider_argocd,argocd>> |>= 6
 |[[provider_utils]] <<provider_utils,utils>> |>= 1
-|[[provider_null]] <<provider_null,null>> |>= 3
 |===
 
 = Resources
@@ -200,6 +224,24 @@ Description: ID to pass other modules in order to refer to this module as a depe
 [cols="a,a,a,a,a",options="header,autowidth"]
 |===
 |Name |Description |Type |Default |Required
+|[[input_project_source_repo]] <<input_project_source_repo,project_source_repo>>
+|Repository allowed to be scraped in this AppProject.
+|`string`
+|`"https://github.com/GersonRS/modern-gitops-stack-module-traefik.git"`
+|no
+
+|[[input_namespace]] <<input_namespace,namespace>>
+|Namespace where the applications's Kubernetes resources should be created. Namespace will be created in case it doesn't exist.
+|`string`
+|`"management"`
+|no
+
+|[[input_argocd_namespace]] <<input_argocd_namespace,argocd_namespace>>
+|Namespace used by Argo CD where the Application and AppProject resources should be created.
+|`string`
+|`"argocd"`
+|no
+
 |[[input_argocd_project]] <<input_argocd_project,argocd_project>>
 |Name of the Argo CD AppProject where the Application should be created. If not set, the Application will be created in a new AppProject only for this Application.
 |`string`
@@ -221,7 +263,7 @@ Description: ID to pass other modules in order to refer to this module as a depe
 |[[input_target_revision]] <<input_target_revision,target_revision>>
 |Override of target revision of the application chart.
 |`string`
-|`"v2.7.0"`
+|`"v2.8.0"`
 |no
 
 |[[input_enable_service_monitor]] <<input_enable_service_monitor,enable_service_monitor>>

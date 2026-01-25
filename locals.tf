@@ -1,6 +1,11 @@
 locals {
   helm_values = [{
     traefik = {
+      ingressRoute = {
+        dashboard = {
+          enabled = true
+        }
+      }
       deployment = {
         replicas = var.replicas
         podLabels = {
@@ -10,7 +15,7 @@ locals {
       metrics = {
         prometheus = {
           service = {
-            enabled = true
+            enabled = var.enable_service_monitor
           }
           serviceMonitor = {
             enabled = var.enable_service_monitor

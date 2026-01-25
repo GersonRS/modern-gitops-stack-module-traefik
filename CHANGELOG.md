@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.7.0](https://github.com/GersonRS/modern-gitops-stack-module-traefik/compare/v2.6.1...v2.7.0) (2025-10-20)
+
+
+### 🚀 New Features
+
+* add copilot instructions and update module configuration ([fdae2a4](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/fdae2a4bd95f11be3db7a2a9ac82dbdb429c0e55))
+* Add Copilot instructions and update module configuration ([014f146](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/014f1463bab402d3497fa8ad2ae5f71f42446c07))
+* add dashboard ([72bef83](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/72bef8354a46b09b310702b759493e71acd12870))
+* rollback version to v30.1.0 ([e6ca9f8](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/e6ca9f8224f03258bb143fedcf47171415d4ff0f))
+* update chart ([1cce1a7](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/1cce1a7fb90d481bb60158b9360859830d51c88e))
+* update repo ([9793841](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/97938413f7760d578b780e06d2f61cbc1f2648a4))
+
 ## [2.6.1](https://github.com/GersonRS/modern-gitops-stack-module-traefik/compare/v2.6.0...v2.6.1) (2025-02-08)
 
 

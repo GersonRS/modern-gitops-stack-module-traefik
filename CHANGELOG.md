@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.9.0](https://github.com/GersonRS/modern-gitops-stack-module-traefik/compare/v2.8.0...v2.9.0) (2026-01-26)
+
+
+### 🚀 New Features
+
+* adjust kubernetes service version ([2350b10](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/2350b10ca0e2d29f804f84187f4918b1669027d6))
+* adjust repository ([8377c5d](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/8377c5d285870a9dafacc8176727cf8f73b03dc7))
+* rename variable ([3ab27f8](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/3ab27f8583fcad6b11ec7da7232249f542226c22))
+* update chart ([2fc2d64](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/2fc2d64746b09dd4da3f501959d880359c398d75))
+* update chart ([440ab59](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/440ab594d30bf0bb85dd1fe14435a127a7aa65db))
+* update code ([eff76d7](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/eff76d7582b1b30abe48483f02918fbd3d09d9e8))
+
+
+### 🔥 Bug Fixes
+
+* adjust trafik output revision ([fd4f208](https://github.com/GersonRS/modern-gitops-stack-module-traefik/commit/fd4f208a76d250541ba1031c9fe22c10b4fb4360))
+
 ## [2.8.0](https://github.com/GersonRS/modern-gitops-stack-module-traefik/compare/v2.7.0...v2.8.0) (2026-01-25)
 
 
